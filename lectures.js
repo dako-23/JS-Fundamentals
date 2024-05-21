@@ -1,0 +1,10 @@
+function lectures (input) {
+
+    
+
+
+
+
+
+
+}
