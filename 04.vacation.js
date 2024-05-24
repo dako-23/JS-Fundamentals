@@ -46,7 +46,7 @@ function solve(groupCount, groupType, dayOfWeek) {
     if (groupType === 'Students' && groupCount >= 30) {
         totalPrice *= 0.85
     } else if (groupType === 'Business' && groupCount >= 100) {
-        groupCount -= 10 * singlePrice;
+        totalPrice -= 10 * singlePrice;
     } else if (groupType === 'Regular' && groupCount >= 10 && groupCount <= 20) {
         totalPrice *= 0.95
     }
