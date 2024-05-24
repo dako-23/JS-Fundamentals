@@ -4,13 +4,13 @@ function solve(num) {
    
 
     for (let i = 1; i <= num; i++) {
-        let string = "";
+        let result = "";
         
         for(let j = 1; j <= i; j++){
-             string += i + " ";
+             result += i + " ";
             
         }
-console.log(string);
+console.log(result);
         
     }
 
