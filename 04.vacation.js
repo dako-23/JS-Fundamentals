@@ -11,7 +11,7 @@ function solve(groupCount, groupType, dayOfWeek) {
             } else if (dayOfWeek === 'Saturday') {
                 singlePrice = 9.80;
                 totalPrice = singlePrice * groupCount
-            } else {
+            } else if (dayOfWeek === 'Sunday') {
                 singlePrice = 10.46;
                 totalPrice = singlePrice * groupCount
             }
@@ -23,7 +23,7 @@ function solve(groupCount, groupType, dayOfWeek) {
             } else if (dayOfWeek === 'Saturday') {
                 singlePrice = 15.60;
                 totalPrice = singlePrice * groupCount
-            } else {
+            } else if (dayOfWeek === 'Sunday') {
                 singlePrice = 16;
                 totalPrice = singlePrice * groupCount
             }
@@ -35,7 +35,7 @@ function solve(groupCount, groupType, dayOfWeek) {
             } else if (dayOfWeek === 'Saturday') {
                 singlePrice = 20;
                 totalPrice = singlePrice * groupCount
-            } else {
+            } else if (dayOfWeek === 'Sunday') {
                 singlePrice = 22.50;
                 totalPrice = singlePrice * groupCount
             }
@@ -54,9 +54,8 @@ function solve(groupCount, groupType, dayOfWeek) {
     console.log(`Total price: ${totalPrice.toFixed(2)}`);
 
 
-
-
-
-
 }
-solve(40,"Regular","Saturday");
+solve(40, "Regular", "Saturday");
+solve (30,
+"Students",
+"Sunday")
