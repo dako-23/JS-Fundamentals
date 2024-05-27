@@ -12,11 +12,17 @@ function solve(num) {
     let isAmazing = "False";
     let stringSum = `${sum}`;
 
-    for (let i = 0; i < stringNum.length; i++) {
-        console.log(stringSum[i]);
+    for (let i = 0; i < stringSum.length; i++) {
+        if(stringSum[i] === '9'){
+            isAmazing = 'True'
+            break;
+        }
+        
     }
 
 
+    console.log(`${num} Amazing? ${isAmazing}`);
+
 }
 solve(999);
-// solve(1233);
+solve(1233);
