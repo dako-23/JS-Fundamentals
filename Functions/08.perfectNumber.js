@@ -6,12 +6,15 @@ function perfectNumber(num) {
 
 
         if (num % divisor === 0) {
-            sum += divisor
+            sum += divisor;
         }
-        console.log(sum);
 
     }
-    // console.log(sum);
+    if(sum === num){
+        console.log('We have a perfect number!');
+    } else{
+        console.log("It's not so perfect.");
+    }
 
 
 }
