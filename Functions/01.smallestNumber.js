@@ -9,4 +9,4 @@ function smallestNumber(num1, num2, num3) {
 
 
 }
-smallestNumber(10, 100, 40)
+smallestNumber(10, 5, 3)
