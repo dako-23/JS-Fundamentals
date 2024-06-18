@@ -21,10 +21,19 @@
 // console.log(arr1, clonedArr);
 
 // // -------------------- splice
-const nums = [5, 10, 15, 20, 25, 30];
+// const nums = [5, 10, 15, 20, 25, 30];
 // const splicedArr = nums.splice(1, 4);
 // console.log(splicedArr);
 // console.log(nums);
-console.log(nums.splice(3, 2, "test1", 'test2'));
-console.log(nums);
-
+// console.log(nums.splice(3, 2, "test1", 'test2'));
+// console.log(nums);
+// ---------------------------
+// .MAP
+// const arr23 = ["1", "2", "3", "4", "5"].map(x => x * 2)
+// console.log(arr23);
+// ---------------------------
+// .filter
+// const nums = [5, 10, 15, 20, 25, 30];
+// const newNums = nums.filter((num) => num % 2 !== 0);
+// console.log(newNums);
+// --------------------------
