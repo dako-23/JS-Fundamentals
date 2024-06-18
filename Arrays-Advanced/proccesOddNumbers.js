@@ -15,7 +15,7 @@ function proccessOddNumbers(arr) {
 
 
 
-    console.log(resultArr);
+    console.log(resultArr.join(' '));
 
 
 
