@@ -6,6 +6,7 @@ function factorialDivision(num1, num2) {
         for (let factor = 2; factor <= num; factor++) {
             factorial *= factor;
         }
+        console.log(num);
         return factorial;
     }
 

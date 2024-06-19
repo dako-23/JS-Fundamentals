@@ -20,7 +20,7 @@
 // const clonedArr = arr1.slice()
 // console.log(arr1, clonedArr);
 
-// // -------------------- splice
+// -------------------- splice
 // const nums = [5, 10, 15, 20, 25, 30];
 // const splicedArr = nums.splice(1, 4);
 // console.log(splicedArr);
@@ -29,8 +29,11 @@
 // console.log(nums);
 // ---------------------------
 // .MAP
-// const arr23 = ["1", "2", "3", "4", "5"].map(x => x * 2)
-// console.log(arr23);
+const arr23 = ["1", "2", "3", "4", "5"].map((x) => {
+    return x * 2
+
+})
+console.log(arr23);
 // ---------------------------
 // .FILTER
 // const nums = [5, 10, 15, 20, 25, 30];
@@ -44,6 +47,6 @@
 // console.log('--------');
 // console.log(sorted);
 //.SORT strings
-const arr = ["zqn", "zama", "zoftun", 'azn']
-const sorted = arr.sort((a,b) => a.localeCompare(b))
-console.log(sorted);
+// const arr = ["zqn", "zama", "zoftun", 'azn']
+// const sorted = arr.sort((a,b) => a.localeCompare(b))
+// console.log(sorted);
