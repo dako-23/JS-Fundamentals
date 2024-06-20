@@ -29,11 +29,11 @@
 // console.log(nums);
 // ---------------------------
 // .MAP
-const arr23 = ["1", "2", "3", "4", "5"].map((x) => {
-    return x * 2
+// const arr23 = ["1", "2", "3", "4", "5"].map((x) => {
+//     return x * 2
 
-})
-console.log(arr23);
+// })
+// console.log(arr23);
 // ---------------------------
 // .FILTER
 // const nums = [5, 10, 15, 20, 25, 30];
