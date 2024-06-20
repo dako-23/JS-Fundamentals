@@ -50,3 +50,7 @@
 // const arr = ["zqn", "zama", "zoftun", 'azn']
 // const sorted = arr.sort((a,b) => a.localeCompare(b))
 // console.log(sorted);
+const equipmentIdx = inventory.indexOf(equipment)
+if(equipmentIdx !== -1){
+    inventory.splice(equipmentIdx, 1)
+}
