@@ -5,8 +5,11 @@ function gladiatorInventory(arr) {
 
     for (const command of arr) {
         let tokens = command.split(" ")
-        const action = tokens.shift()
-        const equipment = tokens.shift()
+
+        const [action, equipment] = tokens;
+
+        // const action = tokens.shift()
+        // const equipment = tokens.shift()
 
         if (action === 'Buy') {
             if (!inventory.includes(equipment)) {
