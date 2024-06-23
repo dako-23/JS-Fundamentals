@@ -1,6 +1,6 @@
-// const arr = [1, 20, 50, 9, 6];
+const arr = [1, 20, 50, 9, 6];
 
-// arr.push(10);
+arr.push(10);
 // // --------------------
 // const lastEl = arr.pop()
 // console.log(lastEl);
@@ -50,7 +50,7 @@
 // const arr = ["zqn", "zama", "zoftun", 'azn']
 // const sorted = arr.sort((a,b) => a.localeCompare(b))
 // console.log(sorted);
-const equipmentIdx = inventory.indexOf(equipment)
-if(equipmentIdx !== -1){
-    inventory.splice(equipmentIdx, 1)
-}
+// const equipmentIdx = inventory.indexOf(equipment)
+// if(equipmentIdx !== -1){
+//     inventory.splice(equipmentIdx, 1)
+// }

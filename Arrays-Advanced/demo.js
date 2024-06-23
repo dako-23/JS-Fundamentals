@@ -34,14 +34,5 @@ function solve(arr) {
         console.log('-----------');
         console.log(`Total price: ${totalPriceWithTax.toFixed(2)}$`);
     }
-
-
-
-
-
-
-
-
-
 }
 solve(['1050', '200', '450', '2', '18.50', '16.86', 'special']);
