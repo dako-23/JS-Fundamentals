@@ -2,7 +2,7 @@ function solve (arr){
     let roomString = arr[0];
     let rooms = roomString.split('|')
     
-
+console.log(rooms);
 
     let health = 100;
     let coins = 0;
