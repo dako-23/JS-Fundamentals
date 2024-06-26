@@ -18,6 +18,7 @@ function treasureHunt(arr) {
                     }
 
                 }
+                console.log(newItems);
                 break;
             case 'Drop':
                 const index = Number(tokens.shift());
