@@ -11,10 +11,16 @@ function hearDelivery(arr) {
         let action = tokens.shift();
         let heartCount = Number(tokens.shift());
 
-        command = arr.shift();
+        let jumps = Number(neighboors.shift()) -2
+
+
+        
+        command = arr.shift()
+        console.log(jumps);
+
     }
 
-    
+
 
 
 
