@@ -17,7 +17,7 @@ function cat(arr) {
 
     for (const catStr of arr) {
         const [name, age] = catStr.split(' ');
-
+        
         const cat = new Cat(name, age);
         cat.meow()
 
