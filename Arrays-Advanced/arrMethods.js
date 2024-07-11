@@ -30,7 +30,7 @@ arr.push(10);
 // ---------------------------
 // .MAP
 // const arr23 = ["1", "2", "3", "4", "5"].map((x) => {
-//     return x * 2
+//     return x + x
 
 // })
 // console.log(arr23);
