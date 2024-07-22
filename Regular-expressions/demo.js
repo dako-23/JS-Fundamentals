@@ -1,19 +1,19 @@
 
 //matching regex
-// // let pattern = /(\d{2})-(\d{2})-(\d{4})/g;
-// let pattern = /\S+/g;
-// let text =
-//   "Today is a good day and is 22-01-1999! Today is a good day and is 22-02-1999!";
+// let pattern = /(\d{2})-(\d{2})-(\d{4})/g;
+let pattern = /\S+/g;
+let text =
+  "Today is a good day and is 22-01-1999! Today is a good day and is 22-02-1999!";
 
 // // Testing Regex
-// const isDateValid = pattern.test(text);
-// console.log("is date valid: ", isDateValid);
+const isDateValid = pattern.test(text);
+console.log("is date valid: ", isDateValid);
 
-// // Matching Regex
-// const matchedDate = text.match(pattern);
-// for (const date of matchedDate) {
-//   console.log(date);
-// }
+// Matching Regex
+const matchedDate = text.match(pattern);
+for (const date of matchedDate) {
+  console.log(date);
+}
 
 // // Exec Regex
 // const text = "Peter: 123 Mark: 456";
@@ -49,8 +49,8 @@
 // }
 
 // Split Regex
-const text = "1    23   4";
-const regexp = /\s+/g;
-const result = text.split(regexp);
-console.log(result);
+// const text = "1    23   4";
+// const regexp = /\s+/g;
+// const result = text.split(regexp);
+// console.log(result);
 
