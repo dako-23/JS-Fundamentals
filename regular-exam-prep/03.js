@@ -4,39 +4,47 @@ function solve(input) {
 
         constructor(name, hp, mp) {
             this.name = name;
-            this.hp = hp;
-            this.mp = mp;
+            this.hp = Number(hp);
+            this.mp = Number(mp);
         }
 
-        Heal() {
+        Heal(tokens) {
 
-            if (hp <= 100) {
-                hp += amount
+            const [_, name, amount] = tokens
+
+            if (this.hp <= 100) {
+                this.hp += amount
                 console.log(`${name} healed for ${amount} HP!`);
+            }
+
+        }
+
+        Recharge(tokens) {
+            const [_, name, amount] = tokens
+
+            if (this.mp <= 200) {
+                this.mp += amount
+                console.log(`${name} recharged for ${amount} MP!`);
             }
         }
 
-        TakeDamage() {
-            if (hp > 0) {
-                hp -= damage
-                console.log(`${name} was hit for ${damage} HP by ${attacker} and now has ${hp} HP left!`);
+        TakeDamage(tokens) {
+            const [_, name, damage, attacker] = tokens
+
+            if (this.hp > 0) {
+                this.hp -= damage
+                console.log(`${name} was hit for ${damage} HP by ${attacker} and now has ${this.hp} HP left!`);
             } else {
                 console.log(`${name} has been killed by {attacker}!`);
             }
         }
 
-        Recharge() {
-            if (mp <= 200) {
-                mp += amount
-                console.log(`${name} recharged for ${amount} MP!`);
-            }
-        }
+        CastSpell(tokens) {
+            const [_, name, damage, attacker] = tokens
 
-        CastSpell() {
-
-            if (hp > 0) {
-                hp -= damage
-                console.log(`${name} was hit for ${damage} HP by ${attacker} and now has ${hp} HP left!`);
+            if (this.hp > 0) {
+                this.hp -= damage
+                console.log(`${name} was hit for ${damage} HP by ${attacker} and now has ${this.hp} HP left!`);
             } else {
                 console.log(`${name} has been killed by {attacker}!`);
             }
@@ -47,10 +55,12 @@ function solve(input) {
 
 
     const n = Number(input.shift());
-    const party = {};
+    const party = {}
 
     for (let i = 0; i < n; i++) {
+
         const [name, hp, mp] = input.shift().split(' ');
+        const hero = new Hero(name, hp, mp)
         party[name] = new Hero(name, hp, mp);
     }
 
@@ -58,10 +68,18 @@ function solve(input) {
 
         const line = input.shift()
         const tokens = line.split(' - ')
-        const [action, name] = tokens;
+        const [action, name] = tokens
         const hero = party[name]
-        hero[action]()
-        
+        hero[action](tokens);
+
+
+    }
+
+    for (const name in party) {
+        const hero = party[name];
+        console.log(name);
+        console.log(`   HP: ${hero.hp}`);
+        console.log(`   MP: ${hero.mp}`);
 
     }
 
@@ -73,6 +91,7 @@ function solve(input) {
 
 
 }
+
 solve([
     '2',
     'Solmyr 85 120',
