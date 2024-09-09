@@ -4,8 +4,6 @@ function solve(arr) {
 
     let command = arr.shift();
 
-    let resultArr = [];
-
 
     while (command !== "Sail") {
 
